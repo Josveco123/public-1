@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+  <title>Laboratorios del caribe SAS</title>
+</head>
+
+<body>
+  <div id="home">
+    <header>
+
+      <div id="nav-interno">
+        <div id="logotipo">
+          <a href="index.html"><img src="/images/logo.svg" alt=""></a>
+        </div>
+        <div id="menus-casa">
+          <div id="mnuI">
+            <div id="mnu-producto">
+              <a id="a-productos" class="opciones-a" href="" title="PRODUCTOS">PRODUCTOS</a>
+              <ul id="ul-productos">
+                <li>
+                  <a class="li-producto" href="#" onclick="producto()" title="Opcion 1">Productos</a>
+                </li>
+                <li>
+                  <a href="#" onclick="distribuidores()" title="Opcion 1">Distribuidores</a>
+                </li>
+              </ul>
+            </div>
+            <div id="mnu-nosotros" class="opciones-class">
+              <a id="nosotros-a" class="opciones-a" onclick="fNosotros()" href="#">NOSOTROS</a>
+            </div>
+            <div id="contacto" class="opciones-class">
+              <a id="contacto-a" class="opciones-a" href="#" onclick="contactos()">CONTACTOS</a>
+            </div>
+            <div class="opciones-class">
+              <a class="opciones-a" href="#" onclick="registro()">REGISTRESE</a>
+            </div>
+          </div>
+          <form id="mnu-search" class="clase-mnu-searrch collapsed" onmouseover="expandir()" onmouseout="recojer()">
+            <input id="inputBuscar" class="clase-mnu-searrch" type="text" name="q" placeholder="Buscar"
+              onkeydown="handleKeyDown(event)"></input>
+            <img id="lupa" src="../images/lupa.svg" alt="" onclick="submitForm()"></img>
+          </form>
+        </div>
+        <img id="menuA" src="../images/menuA.png" onclick="desplegarMenu()" alt="">
+        <div id="mnu-Amb">
+          <ul id="mnuUL">
+            <li>
+              <a class="claseUL" onclick="producto()" href="#">Productos</a>
+            </li>
+            <li>
+              <a class="claseUL" onclick="distribuidores()" href="#">Distribuidores</a>
+            </li>
+            <li>
+              <a class="claseUL" onclick="fNosotros()" href="#">Nosotros</a>
+            </li>
+            <li>
+              <a class="claseUL" onclick="contactos()" href="#">Contactos</a>
+            </li>
+            <li>
+              <a class="claseUL" onclick="registro()" href="#">Registrese</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="informacion-nav">
+        <a id="inicio" href="index.html">INICIO</a>
+        <p id="slogan">
+          Fabricamos y comercializamos
+          <span id="medicamentos"> medicamentos </span>para el consumo humano
+        </p>
+      </div>
+    </header>
+    <!--<div "
+     
+        >-->
+    <div id="areacomun">
+      <!--<div         
+        
+        >-->
+      <div id="cajon">
+        <section id="pagina1">
+
+          <div class="mosaico">
+            <!--   
+            <p id="sloganPortada">Avanzando juntos hacia <br> un futuro saludable</p> 
+                                -->
+            <img src="./images/portada.png" alt="Imagen 1" />
+          </div>
+
+          <div id="figura">
+            <div id="figura1-index">
+              <img src="../images/cafee.svg" alt="">
+              <span> BLOGS </span>
+              <img src="../images/cafee.svg" alt="">
+            </div>
+            <div id="lineaindex"></div>
+          </div>
+        </section>
+        <!--<div id=
+      
+          >-->
+        <section id="paginablog">
+          <div id="textIni">
+            <h2>Artículos del <span>Blog</span></h2>
+          </div>
+          <div id="blogs">
+            <div class="div-blogs">
+              <img src="../images/blog2.jpg" alt="" class="blogimg" />
+              <p class="blogCategoria">
+                LDC MIEL
+              </p>
+              <h1 class="titBlogs">NOMANTE-MIEL DE ABEJAS </h1>
+              <p class="p-blogs">
+                La miel de abeja ha sido empleada durante miles de años por diferentes culturas, por su valor nutritivo
+                y medicinal. Lo mismo se ha usado para conservar otros alimentos que como edulcorante, como origen de
+                bebidas alcohólicas o con fines medicinales.1,2 Se entiende por miel la sustancia dulce natural
+                producida por abejas Apis mellifera a partir del néctar de las plantas, o de secreciones vivas de estas,
+                o de secreciones de insectos succionadores de plantas que quedan sobre sus partes vivas, y que las
+                abejas recogen, transforman y combinan con sustancias específicas propias: depositan, deshidratan,
+                almacenan y dejan en el panal para que madure y añeje. <br /><br />
+
+                Las abejas productoras de miel aparecieron en la tierra desde hace 600 000 000 de años. Inicialmente,
+                vivían en sus cuevas con la reproducción de condiciones favorables que proporcionó el hombre para
+                optimizar la obtención de los productos de la colmena. La apicultura sufrió una gran transformación.
+              </p>
+              <p class="blogImgFinal">
+                Bibliográfica:Ajibola A, Chamunorwa JP, Erlwanger KH. Nutraceutical values of natural honey and its
+                contribution to human health and wealth. Nutr Metab (Lond). 2012 Jun 20;9:61. Citado en PubMed; PMID:
+                22716101.
+                <br>
+                157 Palabra 193 con Bibliografía.
+              </p>
+            </div>
+            <div class="div-blogs">
+              <img src="../images/blog1.jpg" alt="" class="blogimg" />
+              <p class="blogCategoria">
+                LDC Blog
+              </p>
+              <h1 class="titBlogs">ARTRIXIN-ALCANFOR</h1>
+              <p class="p-blogs">
+                El alcanfor es una sustancia semisólida cristalina y cerosa con un fuerte y penetrante olor acre. Es un
+                terpenoide con la fórmula química C10H16O. Se encuentra en la madera del árbol Alcanforero Cinnamomum
+                camphora, un enorme árbol perenne originario de Asia (particularmente de Borneo, de donde toma su nombre
+                alterno "Árbol de Borneo"), y en algunos otros árboles de la familia de las lauraceae. Puede también ser
+                sintetizado del aceite de trementina. Se usa como bálsamo y con otros propósitos medicinales.
+                <br />
+                <br />
+                La palabra alcanfor probablemente derive de la latinización del vocablo árabe al-Kafur que toma a su vez
+                del malayo Kapur Barus que significa "Gis de Barus". De hecho comerciantes malayos a quienes los hindues
+                les compraban el alcanfor lo llamaban Kapur, "Gis" (por su color blanco). Barus era el puerto situado en
+                la costa oeste de la isla indonesia de Sumatra, de donde los comerciantes lo traían. En el idioma
+                sánscrito, la palabra Karpooram es usada para llamar el alcanfor.
+              </p>
+              <p class="blogImgFinal">
+                Ref Bibliográfica: El contenido está disponible bajo los términos de la Licencia de GNU Free
+                Documentation License.
+                <br>
+                168 Palabras 178 con bibliografía
+              </p>
+            </div>
+            <div class="div-blogs">
+              <img src="../images/blog3.jpg" alt="" class="blogimg" />
+              <p class="blogCategoria">
+                LDC olleto
+              </p>
+              <h1 class="titBlogs"> ACEITE DE ALMENDRAS</h1>
+              <p class="p-blogs">
+                El árbol de Lecythis minor DC, se conoce en la costa norte de Colombia con los nombres comunes de olleto
+                y olla de mono; crece en zonas tropicales, puede alcanzar hasta 25 m de altura, su corteza es de color
+                gris cubierto de estrías, el fruto es leñoso con forma de urna unida a una tapa que suelta en la
+                madurez, puede contener de 10 a 16 semillas por fruto, las cuales tienen forma ovoide y color marrón
+                ubicadas en un cuerpo carnoso; el tronco presenta excelentes condiciones para la extracción de madera y
+                es usado en construcciones pesadas; el aceite extraído de las semillas es considerado popularmente como
+                un agente hemostático (López y Montero, 2005). Existen alrededor de 27 especies del gènero lecythis
+                reseñadas desde Nicaragua hasta Brasil, las más comunes son: Lecythis ampla Mier, elliptica, minor,
+                ollaria, pisonis, usitata, zabucajo, prancei, serrata, lanceolata, chartacea, mesophyla, tuyrana,
+                corrugata, entre otras.
+              </p>
+              <p class="blogImgFinal">
+                Bibliografia: Información Tecnológica Vol. 24(1), 59-68 (2013) doi: 10.4067/S0718-07642013000100008
+                Composición Química del Aceite de Almendras producidas por el Árbol Olleto Lafont 60 Información
+                Tecnológica Vol. 24 Nº 1 2013
+                <br />
+                175 palabras 205 con bibliografia
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--<div 
+        
+        >-->
+      </div>
+      <!--<div id=
+           
+      >-->
+      <div id="footer">
+        <div id="footerBase">
+          <div id="footer-empresa">
+            <h1>Laboratorio del Caribe S.A.S.</h1>
+            <Ul>
+              <li>Dirección: Calle 38 No. 4A-184 Lt-1 Manz A </li>
+              <li>Parque Industrial y Comercial -Sincelejo (Sucre) </li>
+              <li> Telefax: 605 2732307 - 605 2806160 </li>
+              <li>Móvil: (+57) 312 686 9891 </li>
+              <li> E-mail: comercial@laboratoriodelcaribe.com</li>
+              <li> Banco de Colombia: C.C. Nro.(506 04761202) </li>
+            </ul>
+          </div>
+          <div id="footer-link">
+            <h1>Link internos</h1>
+            <a href="#" onclick="recargarHome()">Home</a>
+            <br>
+            <a href="#" onclick="fNosotros()">Nosotros</a>
+            <br>
+            <a href="#" onclick="contactos()">Contacto</a>
+            <br>
+            <a href="#" onclick="registro()">Registrese</a>
+          </div>
+
+          <div id="footer-redes-sociales">
+            <h1>Siguenos en redes Sociales</h1>
+            <div id="redesS">
+              <a href="https://www.facebook.com/labdelcaribesa" target="_blank">
+                <img src="../images/facebook.svg" alt="" srcset="">
+              </a>
+              <a href="https://www.instagram.com/laboratoriodelcaribesas/embed" target="_blank">
+                <img src="../images/instagram.svg" alt="" srcset="">
+              </a>
+              <a href="https://www.tiktok.com/@labodelcaribes.a.s" target="_blank">
+                <img src="../images/tiktok.png" alt="" srcset="">
+              </a>
+              <!--<a class="whatsapp-btn" href="https://web.whatsapp.com/send?text=Buen%20día%20quisiera%20consultar%20sobre%20&amp;phone=573135120781" target="_blank" title="Chatea con Nosotros">-->
+              <a href="https://api.whatsapp.com/send?text=Buen%20día%20quisiera%20consultar%20sobre%20&amp;phone=573135120781"
+                target="_blank" title="Chatea con Nosotros">
+                <img src="../images/whatsapp.svg" alt="" srcset="">
+              </a>
+            </div>
+            <ul>
+              <li> comercial@laboratoriodelcaribe.com</li>
+              <li> monteria@laboratoriodelcaribe.com </li>
+              <li> sincelejo@laboratoriodelcaribe.com</li>
+              <li> ventas@laboratoriodelcaribe.com </li>
+              <li> gerencia@laboratoriodelcaribe.com </li>
+            </ul>
+          </div>
+        </div>
+        <div id="autor">
+          <span id="autorD">@Diseños: JVC - cel: 321 8374037</span><span id="autorI">@Prohibida su reproduccion</span>
+        </div>
+      </div>
+      <!--<div 
+
+    >-->
+    </div>
+    <div id="cuerpo"></div>
+    <script src="../src/Solicitudesfecth.js"></script>
+    <script src="../src/App.js"></script>
+    <script src="../src/cajon.js"></script>
+</body>
+
+</html>
