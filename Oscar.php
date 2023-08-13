@@ -6,7 +6,6 @@ $username = "u582059653_userldc";
 $password = "Oscar123";
 
 // Crear la conexión
-
 $conexion = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
@@ -17,7 +16,6 @@ if (!$conexion) {
  $tabla1="users";
  $tabla2="datos";
  
-
 // consulta
 
 $query = " 
