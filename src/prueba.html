@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="contenedor-producto">
+    <div id="cont-producto">
+      <div id="titValidar">
+        <h1>Validar Usuario</h1>
+      </div>
+
+      <form id="formValidar" action="">
+
+        <p class="formClaveP">Email Empresa o Persona</p>
+        <input id="correo" class="correo formValidarI" type="text" placeholder="Correo electrónico" />
+
+        <p id="saca" class="formClaveP">Contraseña de acceso</p>
+        <input id="clave" class="clave formValidarI" type="text" placeholder="Contraseña" />
+
+        <div id="ejecutar">
+          <a id="boton-registro" onclick="GETregistro()">Ingresar</a>
+          <a id="ocultar" href="javascript:void(0);" onclick="realizarAccion()">Salir</a>
+        </div>
+      </form>
+      <a id="olvido-clave" onClick="buscarClave()" href="#">Recuperar contraseña</a>
+    </div>
+  </div>
+  </script>
+  <script src="Solicitudesfecth.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

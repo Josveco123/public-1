@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mostrar PDF</title>
+  <style>
+    #pdf-container {
+      width: 500px;
+      height: auto;
+    }
+
+    #imprime {
+      background-color: rgb(250, 246, 246);
+      border: 1px solid red;
+      border-radius: 25%;
+      margin-top: 10px;
+      color: rgb(248, 5, 5);
+      font-size: 15px;
+      font-weight: bold;
+      width: 80px;
+      height: 30px;
+      margin-left: 800px;
+      position: fixed;
+    }
+    #imprime:hover {
+      color:white;
+      background-color: rgb(109, 107, 107);
+    }
+  </style>
+</head>
+
+<body>
+  <button id="imprime" onclick="printPDF()">Imprimir</button>
+  <div id="pdf-container"></div>
+  <script src="pdf.js"></script>
+  <script>
+    // Ruta al archivo PDF
+    var searchParams = new URLSearchParams(window.location.search);
+    var archivoPDF = searchParams.get('archivoPDF');
+    var url = archivoPDF;
+    // Cargar PDF
+    pdfjsLib.getDocument(url).promise.then(function (pdf) {
+      // Renderizar la primera página
+      pdf.getPage(1).then(function (page) {
+        var scale = 1.5;
+        var viewport = page.getViewport({ scale: scale });
+
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        var container = document.getElementById('pdf-container');
+        container.appendChild(canvas);
+
+        page.render({
+          canvasContext: context,
+          viewport: viewport
+        });
+      });
+    });
+
+    // Función para imprimir el PDF
+    function printPDF() {
+      window.print();
+    }
+  </script>
+</body>
+
+</html>
