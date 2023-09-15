@@ -16,7 +16,7 @@ if (!$conexion) {
  $tabla1="users";
  $tabla2="datos";
  
-// consulta
+// consulta se comenta por si mas adelante se usa
 
 $query = " 
 SELECT

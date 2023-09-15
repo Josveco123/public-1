@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mensaje = 'Error de envio';
         }
     } else {
+        
         $debugMessages[] = "JSON decoding error"; // Agregar mensaje al arreglo
         $mensaje = "Error al decodificar los datos JSON.";
     }
