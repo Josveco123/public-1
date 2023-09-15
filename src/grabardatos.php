@@ -1,7 +1,7 @@
 <?php
 $mensaje = ""; // Inicializar la variable
 
-include("../src/abrirBDdatos.php"); // Mover la declaración include fuera del bloque if para establecer la conexión a la base de datos
+include("abrirBDdatos.php"); // Mover la declaración include fuera del bloque if para establecer la conexión a la base de datos
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $json = file_get_contents('php://input');

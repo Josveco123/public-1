@@ -31,10 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             $mail->SMTPDebug = SMTP::DEBUG_OFF;
             $mail->isSMTP();
-            $mail->Host = 'smtp.serviciodecorreo.es';
+            $mail->Host = 'smtp.hostinger.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sincelejo@laboratoriodelcaribe.com';
-            $mail->Password = 'Mail2023+';
+            $mail->Username = 'webLdcClave@laboratoriodelcaribe.com';
+            $mail->Password = 'Mail2023$';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
 
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $mail->CharSet = 'UTF-8'; 
 
-            $mail->setFrom('sincelejo@laboratoriodelcaribe.com', 'Emisor');
+            $mail->setFrom('webLdcClave@laboratoriodelcaribe.com', 'Emisor');
             $mail->addAddress($correo, 'Receptor');
 
             $mail->isHTML(true);
@@ -63,3 +63,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $response = array("mensaje" => $mensaje);
     echo json_encode($response);
 }
+
+?>

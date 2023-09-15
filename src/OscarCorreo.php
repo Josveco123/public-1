@@ -165,9 +165,9 @@ if ($result->num_rows > 0) {
 
 $conexion->close();
 
-// enviar correo a Oscar
+// enviar correo a Oscar 
+$correoDestino='gerencia@laboratoriodelcaribe.com';
 
-$correoDestino = 'josveco@gmail.com';
 
 $msj = "De: Web Laboratorio del caribe sas <a href='mailto:$correoDestino'></a><br>";
 $msj .= "Asunto: Envío información web <br><br>";
@@ -182,16 +182,16 @@ $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = SMTP::DEBUG_OFF;
     $mail->isSMTP();
-    $mail->Host = 'smtp.serviciodecorreo.es';
+    $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'sincelejo@laboratoriodelcaribe.com';
-    $mail->Password = 'Mail2023+';
+    $mail->Username = 'webLdcClave@laboratoriodelcaribe.com';
+    $mail->Password = 'Mail2023$';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
     $mail->CharSet = 'UTF-8'; 
 
-    $mail->setFrom('sincelejo@laboratoriodelcaribe.com', 'Emisor');
+    $mail->setFrom('webLdcClave@laboratoriodelcaribe.com', 'Emisor');
     $mail->addAddress($correoDestino, 'Receptor');
 
     $mail->isHTML(true);

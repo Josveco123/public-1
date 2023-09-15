@@ -449,12 +449,12 @@ function pagProductos() {
      -->
              <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <div class="imageProducto">
-          <img src="../images/productos/producto1.png" alt="" />
+          <img src="images/productos/producto1.png" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -475,13 +475,13 @@ function pagProductos() {
       -->
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto2.jpg" alt="" />
+          <img src="images/productos/producto2.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -502,13 +502,13 @@ function pagProductos() {
             -->
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto3.jpg" alt="" />
+          <img src="images/productos/producto3.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -530,13 +530,13 @@ function pagProductos() {
 
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto4.jpg" alt="" />
+          <img src="images/productos/producto4.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -555,13 +555,13 @@ function pagProductos() {
 
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto5.jpg" alt="" />
+          <img src="images/productos/producto5.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -580,13 +580,13 @@ function pagProductos() {
 
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto6.jpg" alt="" />
+          <img src="images/productos/producto6.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -605,13 +605,13 @@ function pagProductos() {
             -->
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto7.jpg" alt="" />
+          <img src="images/productos/producto7.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -631,13 +631,13 @@ function pagProductos() {
 
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto8.jpg" alt="" />
+          <img src="images/productos/producto8.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -657,13 +657,13 @@ function pagProductos() {
 
       <div class="itemProducto">
         <div class="tituloProducto">
-          <img id="imgProducto1" src="../images/medicina.png" alt="" />
+          <img id="imgProducto1" src="images/medicina.png" alt="" />
           <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <img id="imgProducto2" src="../images/favorite.png" alt="" />
+          <img id="imgProducto2" src="images/favorite.png" alt="" />
         </div>
         <!-- titulos>  -->
         <div class="imageProducto">
-          <img src="../images/productos/producto9.jpg" alt="" />
+          <img src="images/productos/producto9.jpg" alt="" />
         </div>
         <!-- imagen  -->
         <div class="info">
@@ -682,13 +682,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto10.jpg" alt="" />
+                <img src="images/productos/producto10.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -707,13 +707,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto11.jpg" alt="" />
+                <img src="images/productos/producto11.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -732,13 +732,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto12.jpg" alt="" />
+                <img src="images/productos/producto12.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -757,13 +757,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto13.jpg" alt="" />
+                <img src="images/productos/producto13.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -782,13 +782,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto14.jpg" alt="" />
+                <img src="images/productos/producto14.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -807,13 +807,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto15.jpg" alt="" />
+                <img src="images/productos/producto15.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -832,13 +832,13 @@ function pagProductos() {
 
             <div class="itemProducto">
               <div class="tituloProducto">
-                <img id="imgProducto1" src="../images/medicina.png" alt="" />
+                <img id="imgProducto1" src="images/medicina.png" alt="" />
                 <div class="label">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <img id="imgProducto2" src="../images/favorite.png" alt="" />
+                <img id="imgProducto2" src="images/favorite.png" alt="" />
               </div>
               <!-- titulos>  -->
               <div class="imageProducto">
-                <img src="../images/productos/producto16.jpg" alt="" />
+                <img src="images/productos/producto16.jpg" alt="" />
               </div>
               <!-- imagen  -->
               <div class="info">
@@ -874,41 +874,41 @@ function distribuidores() {
   <DIV class="dist-contenido">
     <h1 id="oficinas-distri"><Span>Distribuidores</Span> en Colombia</h1>
     <div class="dist-nombre">
-    <img src="../images/distribuidor0.png" alt="">
+    <img src="images/distribuidor0.png" alt="">
     </div>
     <div class="dist-nombre">
-    <img src="../images/distribuidor1.png" alt="">
+    <img src="images/distribuidor1.png" alt="">
     </div>
     <div class="dist-nombre">
-      <img src="../images/distribuidor2.png" alt="">
+      <img src="images/distribuidor2.png" alt="">
     </div>
     <div class="dist-nombre">
-      <img src="../images/distribuidor3.png" alt="">
+      <img src="images/distribuidor3.png" alt="">
     </div>
     <div class="dist-nombre">
-      <img src="../images/distribuidor4.png" alt="">
+      <img src="images/distribuidor4.png" alt="">
     </div>
     <div class="dist-nombre">
-      <img src="../images/distribuidor5.png" alt="">
+      <img src="images/distribuidor5.png" alt="">
     </div>
     <div class="dist-nombre">
-      <img src="../images/distribuidor6.png" alt="">
+      <img src="images/distribuidor6.png" alt="">
     </div>
     <div class="dist-nombre">
-    <img src="../images/distribuidor7.png" alt="">
+    <img src="images/distribuidor7.png" alt="">
     </div>
 
     <div class="dist-nombre">
-    <img src="../images/distribuidor8.png" alt="">
+    <img src="images/distribuidor8.png" alt="">
   </div>
   <div class="dist-nombre">
-    <img src="../images/distribuidor9.png" alt="">
+    <img src="images/distribuidor9.png" alt="">
   </div>
   <div class="dist-nombre">
-    <img src="../images/distribuidor10.png" alt="">
+    <img src="images/distribuidor10.png" alt="">
   </div>
   <div class="dist-nombre">
-  <img src="../images/distribuidor11.png" alt="">
+  <img src="images/distribuidor11.png" alt="">
   </div>
 
   </div>

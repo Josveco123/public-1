@@ -53,7 +53,7 @@ async function POSTregistro() {
 
   // parte de llamado al backend
   try {
-    const response = await fetch("src/grabarusers.php", {
+    const response = await fetch("/src/grabarusers.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -86,7 +86,7 @@ async function POSTregistro() {
     console.error(error);
 
     // Muestra un mensaje de alerta con el error completo
-    mostrar("Ocurrió un error al enviar la solicitud grabaruser", "NADA");
+    mostrar("Ocurrió un error al enviar la solicitud", "NADA");
   }
 }
 
@@ -133,7 +133,7 @@ async function GETregistro() {
   }
 
   try {
-    const response = await fetch("src/buscarusers.php", {
+    const response = await fetch("/src/buscarusers.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -157,17 +157,15 @@ async function GETregistro() {
       const clave = { clave1: correo, clave2: clave2 };
       sessionStorage.setItem("correo", JSON.stringify(clave));
 
-      await mostrar("Validacion exitosa. De click en continue", "NADA");
+      await mostrar("Validacion exitosa, de Clicl nuevamente en productos", "NADA");
+
       await grabarcliente(clave);
-      
       document.querySelector("#cuerpo").style.display = "none"
-
-      pagProductos();
-
+      return;  
+      
       //  mostrar("Usuario validado correctamente", "NADA");
     } else if (mensaje === "invalido") {
-      await mostrar("Usuario o contraseña invalidos", "NADA");
-      await mostrar('Usuario no valid. Si no tienes una cuenta "REGISTRESE" primero', 'NADA')
+      await mostrar("Usuario invalido, si no tiene Usuario vaya a opcion REGISTRESE", "NADA");
       return;
     } else {
       await mostrar("Se presento un error, intente nuevamente", "NADA");
@@ -179,7 +177,7 @@ async function GETregistro() {
     // Muestra un mensaje de alerta con el error completo
     await mostrar("Ocurrió un error al enviar la solicitud", "NADA");
   }
-//  recargarHome();
+  recargarHome();
 }
 
 /*
@@ -187,7 +185,7 @@ A CONTINUACION SE ESCRIBE EL CODIGO DE:
 
                                     GRABAR INGRESO USUARIO
 
-PARA CREAR ENTRAR EN PROCESO PRODUCTO
+PARA CRAR ENTRAR EN PROCESO PRODUCTO
 */
 async function grabarcliente(clave) {
   var fechaActual = new Date();
@@ -201,13 +199,13 @@ async function grabarcliente(clave) {
 
   const datosI = {
     correo: clave.clave1,
-    codigo: "AA inicio",
+    codigo: "inicio",
     fecha: fechahoy,
     control: clave.clave2,
   }
 
   try {
-    const response = await fetch("grabardatos.php", {
+    const response = await fetch("/src/grabardatos.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -226,7 +224,7 @@ async function grabarcliente(clave) {
     // Mostrar el mensaje recibido desde el servidor en la alerta
     if (mensaje === "insertado") {
       // alert("linea 240 de solicitudfecth, se grabo el registro")
-      producto.style.display = "none";
+      recargarHome();
     } else {
       console.log("Se presento un error, intente nuevamente");
     }
@@ -237,7 +235,7 @@ async function grabarcliente(clave) {
     // Muestra un mensaje de alerta con el error completo
     console.log("Ocurrió un error al enviar la solicitud");
   }
-return false;
+
 }
 
 
@@ -263,16 +261,17 @@ async function POSTfichaTecnica(productoC) {
   const claves = JSON.parse(sessionStorage.getItem("correo"));
 
   // para tomar fecha y hora colombiana
-  var fechaActual1 = new Date();
+  var options = {
+    timeZone: 'America/Bogota',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  };
 
-  var dia = fechaActual1.getDate();
-  var mes = fechaActual1.getMonth() + 1;
-  var anio = fechaActual1.getFullYear();
-
- var fechaActual = `${dia.toString().padStart(2, '0')}/${mes.toString().padStart(2, '0')}/${anio}`;
-  // HASTA AQUI
-
-
+  var fechaActual = new Date().toLocaleString('es-CO', options);
   const datosI = {
     correo: claves.clave1,
     codigo: productoC,
@@ -281,7 +280,7 @@ async function POSTfichaTecnica(productoC) {
   }
 
   try {
-    const response = await fetch("src/grabardatos.php", {
+    const response = await fetch("../src/grabardatos.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -317,7 +316,7 @@ async function POSTfichaTecnica(productoC) {
 
 async function verFichaTecnica(productoC) {
   const archivoPDF = productoC + ".pdf";
-  const url = "./images/pdf/printPDF.html?archivoPDF=" + encodeURIComponent(archivoPDF);
+  const url = "../images/pdf/printPDF.html?archivoPDF=" + encodeURIComponent(archivoPDF);
   window.open(url);
 }
 /*
@@ -339,7 +338,7 @@ async function sugerencia() {
 
   // envio de correo a del formato de la pagina
   try {
-    const response = await fetch("src/enviarsolicitud.php", {
+    const response = await fetch("../src/enviarsolicitud.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -392,7 +391,7 @@ async function rescatacorreo() {
   //trabanando en enviarcorreoahora
 
   try {
-    const response = await fetch("src/buscacorreo.php", {
+    const response = await fetch("../src/buscacorreo.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),
@@ -453,7 +452,7 @@ async function enviaclave(datos) {
   }
   // envio de correo a del formato de la pagina
   try {
-    const response = await fetch("src/enviarclave.php", {
+    const response = await fetch("../src/enviarclave.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datosI),

@@ -846,31 +846,31 @@ Insercio de pagina NOSOTROS inicio ====================================== NOSOTR
 
 #nos11 {
   height: 13rem;
-  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(201, 198, 198)), url("../images/nos11.jpg");
+  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(201, 198, 198)), url("images/nos11.jpg");
   background-size: cover;
 }
 
 #nos21 {
   height: 43vh;
-  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("../images/nos21.jpg");
+  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("images/nos21.jpg");
   background-size: cover;
 }
 
 #nos41 {
   height: 23vh;
-  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("../images/nos41.jpg");
+  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("images/nos41.jpg");
   background-size: cover;
 }
 
 #nos51 {
   height: 9rem;
-  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("../images/nos51.jpg");
+  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("images/nos51.jpg");
   background-size: cover;
 }
 
 #nos61 {
   height: 23rem;
-  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("../images/nos61.jpg");
+  background-image: linear-gradient(to right, rgba(139, 136, 136, 0), rgb(199, 197, 197)), url("images/nos61.jpg");
   background-size: cover;
 }
 
